@@ -18,6 +18,7 @@ export const UsbCSection = () => (
 		/>
 		<diode
 			name="D1"
+			pcbY={2}
 			footprint="0402"
 			connections={{
 				pin1: "USB_C.DN2",
@@ -26,6 +27,8 @@ export const UsbCSection = () => (
 		/>
 		<diode
 			name="D2"
+			pcbX={-3}
+			pcbY={1}
 			footprint="0402"
 			connections={{
 				pin1: "USB_C.DP2",

@@ -95,19 +95,21 @@ export const StepperDriver = () => (
 		<solderjumper
 			pinCount={3}
 			name="J1"
+			footprint="solderjumper3_bridged12"
 			connections={{
 				pin1: "net.VCC3",
 				pin2: "U1.MS1_AD0",
 				pin3: "net.GND",
 			}}
 			pcbX={-10}
-			pcbY={9}
+			pcbY={18}
 		/>
 		<solderjumper
 			pinCount={3}
 			name="J2"
+			footprint="solderjumper3_bridged12"
 			pcbX={-14}
-			pcbY={5}
+			pcbY={13}
 			connections={{
 				pin1: "net.VCC3",
 				pin2: "U1.MS2_AD1",
@@ -117,8 +119,9 @@ export const StepperDriver = () => (
 		<solderjumper
 			pinCount={3}
 			name="J3"
+			footprint="solderjumper3_bridged12"
 			pcbX={-10}
-			pcbY={1}
+			pcbY={10}
 			connections={{
 				pin1: "net.VCC3",
 				pin2: "U1.SPREAD",
@@ -148,8 +151,8 @@ export const StepperDriver = () => (
 			name="R2"
 			resistance="10k"
 			footprint="0402"
-			pcbX={-6}
-			pcbY={12}
+			pcbX={-2}
+			pcbY={14}
 			connections={{
 				pin1: "net.VCC3",
 				pin2: "U1.N_EN",
