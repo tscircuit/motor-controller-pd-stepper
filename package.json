@@ -1,5 +1,5 @@
 {
-  "name": "@tsci/imrishabh18.motor-controller",
+  "name": "@tsci/tscircuit.motor-controller",
   "version": "1.0.0",
   "description": "A tscircuit component package",
   "main": "index.tsx",
