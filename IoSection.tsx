@@ -6,7 +6,7 @@ export const IoSection = () => (
 		<schematictext text="IO" schY={6} fontSize={0.5} />
 		<SM04B_SRSS_TB_LF__SN_
 			name="J5"
-			pcbX={-29}
+			pcbX={-32.5}
 			pcbY={-10}
 			pcbRotation={270}
 			connections={{
@@ -20,7 +20,7 @@ export const IoSection = () => (
 		/>
 		<SM03B_SRSS_TB_LF__SN_
 			name="J6"
-			pcbX={29}
+			pcbX={32.5}
 			pcbY={-10}
 			pcbRotation={90}
 			connections={{

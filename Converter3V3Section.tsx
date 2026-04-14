@@ -4,7 +4,7 @@ export const Converter3V3Section = () => (
 	<group pcbX={-12} pcbY={-18} schX={-18} schY={-13}>
 		<schematictext text="3V3 Converter" schY={6} fontSize={0.5} />
 		<MPM3612GLQ_Z
-			name="U_BUCK"
+			name="U4"
 			pcbX={0}
 			pcbY={0}
 			schWidth={2.8}
@@ -78,7 +78,7 @@ export const Converter3V3Section = () => (
 			pcbY={4}
 			connections={{
 				pin1: "net.VBUS",
-				pin2: "U_BUCK.EN",
+				pin2: "U4.EN",
 			}}
 		/>
 		<resistor
@@ -88,7 +88,7 @@ export const Converter3V3Section = () => (
 			pcbX={8}
 			pcbY={-4}
 			connections={{
-				pin1: "U_BUCK.PG",
+				pin1: "U4.PG",
 				pin2: "net.VCC3",
 			}}
 		/>
@@ -100,7 +100,7 @@ export const Converter3V3Section = () => (
 			pcbY={8}
 			connections={{
 				pin1: "net.VCC3",
-				pin2: "U_BUCK.VOUT_S",
+				pin2: "U4.VOUT_S",
 			}}
 		/>
 		<resistor

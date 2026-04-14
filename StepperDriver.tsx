@@ -3,7 +3,7 @@ import { TMC2209_LA_T } from "./imports/TMC2209_LA_T";
 
 export const StepperDriver = () => (
 	<group pcbX={-18} pcbY={8} schX={-18} schY={8}>
-		<schematictext text="Stepper Driver" schY={10} fontSize={0.5} />
+		<schematictext text="Stepper Driver" schY={7} fontSize={0.5} />
 
 		<TMC2209_LA_T
 			name="U1"
@@ -128,7 +128,7 @@ export const StepperDriver = () => (
 			name="P1"
 			pcbX={-13}
 			pcbY={-1}
-			pcbRotation={270}
+			pcbRotation={90}
 			schPinArrangement={{
 				leftSide: {
 					direction: "top-to-bottom",
@@ -236,6 +236,7 @@ export const StepperDriver = () => (
 			}}
 		/>
 		<capacitor
+			polarized
 			name="C8"
 			capacitance="100uF"
 			footprint="0805"

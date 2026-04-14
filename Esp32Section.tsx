@@ -237,6 +237,7 @@ export const Esp32Section = () => (
 				pin2: "net.GND",
 			}}
 		/>
+		<silkscreentext text="RESET" pcbX={4} pcbY={-30} pcbRotation={90} />
 		<pushbutton
 			name="SW4"
 			footprint="pushbutton"
@@ -247,6 +248,7 @@ export const Esp32Section = () => (
 				pin2: "net.GND",
 			}}
 		/>
+		<silkscreentext text="BOOT" pcbX={-12} pcbY={-5} />
 		<pushbutton
 			name="SW5"
 			footprint="pushbutton"
