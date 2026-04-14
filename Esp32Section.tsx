@@ -153,8 +153,8 @@ export const Esp32Section = () => (
 			name="R4"
 			resistance="10k"
 			footprint="0402"
-			pcbX={-18}
-			pcbY={-2}
+			pcbX={-6}
+			pcbY={-18}
 			connections={{
 				pin1: "net.VCC3",
 				pin2: "net.NTC",
@@ -164,8 +164,8 @@ export const Esp32Section = () => (
 			name="R5"
 			resistance="10k NTC"
 			footprint="0402"
-			pcbX={-18}
-			pcbY={-6}
+			pcbX={-6}
+			pcbY={-22}
 			connections={{
 				pin1: "net.NTC",
 				pin2: "net.GND",
@@ -187,7 +187,7 @@ export const Esp32Section = () => (
 			capacitance="0.1uF"
 			footprint="0402"
 			pcbX={12}
-			pcbY={-1}
+			pcbY={-2}
 			connections={{
 				pin1: "net.EN",
 				pin2: "net.GND",
@@ -197,8 +197,8 @@ export const Esp32Section = () => (
 			name="C2"
 			capacitance="1uF"
 			footprint="0402"
-			pcbX={15}
-			pcbY={-1}
+			pcbX={12}
+			pcbY={1}
 			connections={{
 				pin1: "net.EN",
 				pin2: "net.GND",
@@ -209,7 +209,7 @@ export const Esp32Section = () => (
 			capacitance="1uF"
 			footprint="0402"
 			pcbX={12}
-			pcbY={8}
+			pcbY={7}
 			connections={{
 				pin1: "net.VCC3",
 				pin2: "net.GND",
@@ -219,8 +219,8 @@ export const Esp32Section = () => (
 			name="C5"
 			capacitance="10uF"
 			footprint="0805"
-			pcbX={15}
-			pcbY={8}
+			pcbX={14}
+			pcbY={4}
 			connections={{
 				pin1: "net.VCC3",
 				pin2: "net.GND",
@@ -230,8 +230,8 @@ export const Esp32Section = () => (
 			name="C11"
 			capacitance="0.1uF"
 			footprint="0402"
-			pcbX={-8}
-			pcbY={2}
+			pcbX={-20}
+			pcbY={-8}
 			connections={{
 				pin1: "net.BOOT",
 				pin2: "net.GND",
@@ -240,8 +240,8 @@ export const Esp32Section = () => (
 		<pushbutton
 			name="SW4"
 			footprint="pushbutton"
-			pcbX={16}
-			pcbY={-4}
+			pcbX={0}
+			pcbY={-30}
 			connections={{
 				pin1: "net.EN",
 				pin2: "net.GND",

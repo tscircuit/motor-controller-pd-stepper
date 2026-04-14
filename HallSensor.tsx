@@ -1,7 +1,7 @@
 import { AS5600_ASOT } from "./imports/AS5600_ASOT";
 
 export const HallSensor = () => (
-	<group pcbX={-34} pcbY={26} schX={-18} schY={-2}>
+	<group pcbX={-31} pcbY={31} schX={-18} schY={-2}>
 		<schematictext text="Hall Sensor" schY={3} fontSize={0.5} />
 		<AS5600_ASOT
 			name="U_HALL"
@@ -31,8 +31,8 @@ export const HallSensor = () => (
 			name="C_HALL_3V3"
 			capacitance="100nF"
 			footprint="0402"
-			pcbX={6}
-			pcbY={-4}
+			pcbX={10}
+			pcbY={-10}
 			connections={{
 				pin1: "net.VCC3",
 				pin2: "net.GND",
@@ -42,7 +42,7 @@ export const HallSensor = () => (
 			name="R_HALL_SCL"
 			resistance="4.7k"
 			footprint="0402"
-			pcbX={6}
+			pcbX={12}
 			pcbY={-15}
 			connections={{
 				pin1: "net.VCC3",
@@ -53,7 +53,7 @@ export const HallSensor = () => (
 			name="R_HALL_SDA"
 			resistance="4.7k"
 			footprint="0402"
-			pcbX={10}
+			pcbX={16}
 			pcbY={-15}
 			connections={{
 				pin1: "net.VCC3",

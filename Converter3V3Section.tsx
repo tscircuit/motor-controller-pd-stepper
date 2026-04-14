@@ -42,7 +42,7 @@ export const Converter3V3Section = () => (
 			capacitance="100nF"
 			footprint="0402"
 			pcbX={3}
-			pcbY={0}
+			pcbY={-4}
 			connections={{
 				pin1: "net.VBUS",
 				pin2: "net.GND",
@@ -96,7 +96,7 @@ export const Converter3V3Section = () => (
 			name="R27"
 			resistance="10k"
 			footprint="0402"
-			pcbX={4}
+			pcbX={-2}
 			pcbY={8}
 			connections={{
 				pin1: "net.VCC3",
