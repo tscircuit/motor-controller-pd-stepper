@@ -17,6 +17,12 @@ export const SM04B_SRSS_TB_LF__SN_ = (props: ChipProps<typeof pinLabels>) => {
 				jlcpcb: ["C160404"],
 			}}
 			manufacturerPartNumber="SM04B_SRSS_TB_LF__SN_"
+			schPinArrangement={{
+				leftSide: {
+					direction: "top-to-bottom",
+					pins: ["pin1", "pin2", "pin3", "pin4", "pin5", "pin6"],
+				},
+			}}
 			footprint={
 				<footprint>
 					<smtpad
