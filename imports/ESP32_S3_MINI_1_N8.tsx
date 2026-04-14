@@ -84,6 +84,17 @@ export const ESP32_S3_MINI_1_N8 = (props: ChipProps<typeof pinLabels>) => {
 				jlcpcb: ["C2913206"],
 			}}
 			manufacturerPartNumber="ESP32_S3_MINI_1_N8"
+			schPinStyle={{
+				EN: {
+					marginBottom: 0.2,
+				},
+				RXD0: {
+					marginBottom: 0.2,
+				},
+				IO48: {
+					marginBottom: 0.2,
+				},
+			}}
 			footprint={
 				<footprint>
 					<smtpad

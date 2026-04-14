@@ -1,7 +1,7 @@
 import { CH224K } from "./imports/CH224K";
 
 export const UsbPdSection = () => (
-	<group pcbX={24} pcbY={2} schX={18} schY={2}>
+	<group pcbX={24} pcbY={2} schX={18} schY={-2}>
 		<schematictext text="USB PD" schY={4} fontSize={0.5} />
 		<CH224K
 			name="U3"
