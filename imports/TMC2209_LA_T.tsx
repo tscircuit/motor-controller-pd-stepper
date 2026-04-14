@@ -2,7 +2,7 @@ import type { ChipProps } from "@tscircuit/props";
 
 const pinLabels = {
 	pin1: ["OB2"],
-	pin2: ["ENN"],
+	pin2: ["N_EN"],
 	pin3: ["GND2"],
 	pin4: ["CPO"],
 	pin5: ["CPI"],
@@ -14,7 +14,7 @@ const pinLabels = {
 	pin11: ["DIAG"],
 	pin12: ["INDEX"],
 	pin13: ["CLK"],
-	pin14: ["PDN_UART"],
+	pin14: ["N_PD_UART"],
 	pin15: ["VCC_IO"],
 	pin16: ["STEP"],
 	pin17: ["VREF"],
@@ -25,11 +25,11 @@ const pinLabels = {
 	pin22: ["VS2"],
 	pin23: ["BRA"],
 	pin24: ["OA1"],
-	pin25: ["UNUSED"],
+	pin25: ["NC"],
 	pin26: ["OB1"],
 	pin27: ["BRB"],
 	pin28: ["VS1"],
-	pin29: ["EP"],
+	pin29: ["EXP"],
 } as const;
 
 export const TMC2209_LA_T = (props: ChipProps<typeof pinLabels>) => {

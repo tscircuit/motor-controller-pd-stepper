@@ -2,9 +2,9 @@ import { TYPE_C_31_M_12 } from "./imports/TYPE_C_31_M_12";
 
 export const UsbCSection = () => (
 	<group pcbX={0} pcbY={-27} schX={0} schY={0}>
-		<schematictext text="USB C" schY={5} fontSize={0.5} />
+		<schematictext text="USB C" schY={2} fontSize={0.5} />
 		<TYPE_C_31_M_12
-			name="J1"
+			name="USB_C"
 			pcbX={0}
 			pcbY={-4}
 			connections={{
@@ -18,16 +18,18 @@ export const UsbCSection = () => (
 		/>
 		<diode
 			name="D1"
+			footprint="0402"
 			connections={{
-				pin1: "J1.DN2",
-				pin2: "J1.GND2",
+				pin1: "USB_C.DN2",
+				pin2: "USB_C.GND2",
 			}}
 		/>
 		<diode
 			name="D2"
+			footprint="0402"
 			connections={{
-				pin1: "J1.DP2",
-				pin2: "J1.GND2",
+				pin1: "USB_C.DP2",
+				pin2: "USB_C.GND2",
 			}}
 		/>
 	</group>
