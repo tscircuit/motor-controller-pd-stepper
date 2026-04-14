@@ -87,7 +87,7 @@ export const StepperDriver = () => (
 				EXP: "net.GND",
 				GND1: "net.GND",
 				GND2: "net.GND",
-                VS1: "U1.VS2"
+				VS1: "U1.VS2",
 			}}
 		/>
 
@@ -208,10 +208,10 @@ export const StepperDriver = () => (
 			footprint="0402"
 			pcbX={5}
 			pcbY={9}
-            connections={{
-                pin1: "U1.VCC_IO",
-                pin2: "net.GND",
-            }}
+			connections={{
+				pin1: "U1.VCC_IO",
+				pin2: "net.GND",
+			}}
 		/>
 		<capacitor
 			name="C6"

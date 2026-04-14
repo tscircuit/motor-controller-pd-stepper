@@ -1,12 +1,10 @@
 import type { ChipProps } from "@tscircuit/props";
 
 const pinLabels = {
-	pin1: ["pin1"],
-	pin2: ["pin2"],
-	pin3: ["pin3"],
-	pin4: ["pin4"],
-	pin5: ["pin5"],
-	pin6: ["pin6"],
+	pin1: ["A1"],
+	pin2: ["B1"],
+	pin3: ["A2"],
+	pin4: ["B2"],
 } as const;
 
 export const S4B_PH_SM4_K_TB_LF__SN_ = (props: ChipProps<typeof pinLabels>) => {

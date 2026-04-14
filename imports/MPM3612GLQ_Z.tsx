@@ -6,10 +6,10 @@ const pinLabels = {
 	pin3: ["GND"],
 	pin4: ["VOUT1"],
 	pin5: ["VOUT2"],
-	pin6: ["FB"],
+	pin6: ["VOUT_S"],
 	pin7: ["PG"],
 	pin8: ["VCC"],
-	pin9: ["EP"],
+	pin9: ["EPAD"],
 } as const;
 
 export const MPM3612GLQ_Z = (props: ChipProps<typeof pinLabels>) => {
