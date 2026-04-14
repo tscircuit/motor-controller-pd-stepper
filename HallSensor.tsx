@@ -1,7 +1,7 @@
 import { AS5600_ASOT } from "./imports/AS5600_ASOT";
 
 export const HallSensor = () => (
-	<group pcbX={-34} pcbY={26} schX={-18} schY={0}>
+	<group pcbX={-34} pcbY={26} schX={-18} schY={-2}>
 		<schematictext text="Hall Sensor" schY={3} fontSize={0.5} />
 		<AS5600_ASOT
 			name="U_HALL"
