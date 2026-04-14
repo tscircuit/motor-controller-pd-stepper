@@ -1,30 +1,64 @@
 import { AS5600_ASOT } from "./imports/AS5600_ASOT";
 
 export const HallSensor = () => (
-	<group pcbX={-18} pcbY={-2} schX={-18} schY={0}>
+	<group pcbX={-34} pcbY={26} schX={-18} schY={0}>
 		<schematictext text="Hall Sensor" schY={3} fontSize={0.5} />
-		<AS5600_ASOT name="U5" pcbX={0} pcbY={0} />
+		<AS5600_ASOT
+			name="U_HALL"
+			pcbX={0}
+			pcbY={0}
+			schWidth={2.4}
+			schPinArrangement={{
+				leftSide: {
+					direction: "top-to-bottom",
+					pins: ["VDD5V", "VDD3V3", "OUT", "GND"],
+				},
+				rightSide: {
+					direction: "top-to-bottom",
+					pins: ["DIR", "SCL", "SDA", "PGO"],
+				},
+			}}
+			connections={{
+				VDD5V: "net.VCC3",
+				VDD3V3: "net.VCC3",
+				GND: "net.GND",
+				DIR: "net.GND",
+				SCL: "net.SCL",
+				SDA: "net.SDA",
+			}}
+		/>
 		<capacitor
-			name="C8"
+			name="C_HALL_3V3"
 			capacitance="100nF"
 			footprint="0402"
 			pcbX={6}
 			pcbY={-4}
+			connections={{
+				pin1: "net.VCC3",
+				pin2: "net.GND",
+			}}
 		/>
-		<capacitor
-			name="C9"
-			capacitance="10uF"
-			footprint="0805"
-			pcbX={0}
-			pcbY={-8}
-		/>
-		<resistor name="R3" resistance="4.7k" footprint="0402" pcbX={6} pcbY={-8} />
 		<resistor
-			name="R4"
+			name="R_HALL_SCL"
+			resistance="4.7k"
+			footprint="0402"
+			pcbX={6}
+			pcbY={-15}
+			connections={{
+				pin1: "net.VCC3",
+				pin2: "net.SCL",
+			}}
+		/>
+		<resistor
+			name="R_HALL_SDA"
 			resistance="4.7k"
 			footprint="0402"
 			pcbX={10}
-			pcbY={-8}
+			pcbY={-15}
+			connections={{
+				pin1: "net.VCC3",
+				pin2: "net.SDA",
+			}}
 		/>
 	</group>
 );
