@@ -5,6 +5,7 @@
     "": {
       "name": "@tsci/imrishabh18.motor-controller",
       "devDependencies": {
+        "@biomejs/biome": "^2.4.11",
         "@types/react": "^19.2.14",
         "tscircuit": "^0.0.1623",
         "typescript": "^5.0.0",
