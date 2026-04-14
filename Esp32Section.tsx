@@ -5,8 +5,8 @@ export const Esp32Section = () => (
 		<schematictext text="ESP32-S3" schY={5} fontSize={0.5} />
 		<ESP32_S3_MINI_1_N8
 			name="U2"
-			pcbX={0}
-			pcbY={0}
+			pcbX={12}
+			pcbY={-43}
 			pcbRotation={180}
 			schWidth={4}
 			schPinArrangement={{

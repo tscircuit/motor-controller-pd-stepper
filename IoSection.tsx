@@ -20,7 +20,7 @@ export const IoSection = () => (
 		/>
 		<SM03B_SRSS_TB_LF__SN_
 			name="J6"
-			pcbX={32.5}
+			pcbX={32}
 			pcbY={-10}
 			pcbRotation={90}
 			connections={{
@@ -111,7 +111,7 @@ export const IoSection = () => (
 			name="R26"
 			resistance="1k"
 			footprint="0402"
-			pcbX={15}
+			pcbX={5}
 			pcbY={-24}
 			connections={{
 				pin1: "net.LED2",
@@ -133,7 +133,7 @@ export const IoSection = () => (
 			name="LED2"
 			color="red"
 			footprint="0603"
-			pcbX={18}
+			pcbX={8}
 			pcbY={-24}
 			connections={{
 				pin2: "net.GND",

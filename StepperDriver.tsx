@@ -1,5 +1,6 @@
 import { S4B_PH_SM4_K_TB_LF__SN_ } from "./imports/S4B_PH_SM4_K_TB_LF__SN_";
 import { TMC2209_LA_T } from "./imports/TMC2209_LA_T";
+import { BLA10V100M6_3_6_63TP } from "./imports/BLA10V100M6_3_6_63TP";
 
 export const StepperDriver = () => (
 	<group pcbX={-18} pcbY={8} schX={-18} schY={8}>
@@ -235,13 +236,10 @@ export const StepperDriver = () => (
 				pin2: "net.GND",
 			}}
 		/>
-		<capacitor
-			polarized
+		<BLA10V100M6_3_6_63TP
 			name="C8"
-			capacitance="100uF"
-			footprint="0805"
-			pcbX={15}
-			pcbY={10}
+			pcbX={-6}
+			pcbY={-16}
 			connections={{
 				pin1: "U1.VS2",
 				pin2: "net.GND",

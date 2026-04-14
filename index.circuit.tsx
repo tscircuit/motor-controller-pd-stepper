@@ -7,11 +7,11 @@ import { UsbCSection } from "./UsbCSection";
 import { UsbPdSection } from "./UsbPdSection";
 
 export default () => (
-	<board width="70mm" height="70mm">
-		<hole name="H1" diameter="3.4mm" pcbX={-26} pcbY={-26} />
+	<board width="70mm" height="70mm" schematicDisabled>
+		{/* <hole name="H1" diameter="3.4mm" pcbX={-26} pcbY={-26} />
 		<hole name="H2" diameter="3.4mm" pcbX={26} pcbY={-26} />
 		<hole name="H3" diameter="3.4mm" pcbX={-26} pcbY={26} />
-		<hole name="H4" diameter="3.4mm" pcbX={26} pcbY={26} />
+		<hole name="H4" diameter="3.4mm" pcbX={26} pcbY={26} /> */}
 
 		<UsbCSection />
 		<StepperDriver />
