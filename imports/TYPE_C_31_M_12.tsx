@@ -1,22 +1,22 @@
 import type { ChipProps } from "@tscircuit/props";
 
 const pinLabels = {
-	pin1: ["EH2"],
-	pin2: ["EH1"],
-	pin3: ["EH4"],
-	pin4: ["EH3"],
-	pin5: ["B8"],
-	pin6: ["A5"],
-	pin7: ["B7"],
-	pin8: ["A6"],
-	pin9: ["A7"],
-	pin10: ["B6"],
-	pin11: ["A8"],
-	pin12: ["B5"],
-	pin13: ["A1B12"],
-	pin14: ["B1A12"],
-	pin15: ["B4A9"],
-	pin16: ["A4B9"],
+	pin1: ["SHIELD1"],
+	pin2: ["SHIELD2"],
+	pin3: ["SHIELD3"],
+	pin4: ["SHIELD4"],
+	pin5: ["SBU2"],
+	pin6: ["CC1"],
+	pin7: ["DN2"],
+	pin8: ["DP1"],
+	pin9: ["DN1"],
+	pin10: ["DP2"],
+	pin11: ["SBU1"],
+	pin12: ["CC2"],
+	pin13: ["GND1"],
+	pin14: ["GND2"],
+	pin15: ["VBUS1"],
+	pin16: ["VBUS2"],
 } as const;
 
 export const TYPE_C_31_M_12 = (props: ChipProps<typeof pinLabels>) => {
@@ -266,6 +266,38 @@ export const TYPE_C_31_M_12 = (props: ChipProps<typeof pinLabels>) => {
 					/>
 				</footprint>
 			}
+			schWidth={2}
+			schPinArrangement={{
+				leftSide: {
+					direction: "top-to-bottom",
+					pins: ["CC1", "DP1", "DN1", "SBU1"],
+				},
+				rightSide: {
+					direction: "top-to-bottom",
+					pins: [
+						"VBUS1",
+						"VBUS2",
+						"SBU2",
+						"DN2",
+						"DP2",
+						"CC2",
+						"SHIELD1",
+						"SHIELD2",
+						"SHIELD3",
+						"SHIELD4",
+						"GND1",
+						"GND2",
+					],
+				},
+			}}
+			schPinStyle={{
+				VBUS2: {
+					marginBottom: 0.2,
+				},
+				CC2: {
+					marginBottom: 0.2,
+				},
+			}}
 			cadModel={{
 				objUrl:
 					"https://modelcdn.tscircuit.com/easyeda_models/assets/C165948.obj?uuid=617b05f9bba7410b96c001093d8189e4",
