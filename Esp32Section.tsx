@@ -162,7 +162,7 @@ export const Esp32Section = () => (
 		/>
 		<resistor
 			name="R5"
-			resistance="10k NTC"
+			resistance="10k"
 			footprint="0402"
 			pcbX={-6}
 			pcbY={-22}

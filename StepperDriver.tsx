@@ -171,7 +171,7 @@ export const StepperDriver = () => (
 		/>
 		<resistor
 			name="R7"
-			resistance="100mohm"
+			resistance="100k"
 			footprint="1206"
 			pcbX={7}
 			pcbY={-4}
