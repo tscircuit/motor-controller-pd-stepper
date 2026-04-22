@@ -19,8 +19,9 @@ export const UsbCSection = () => (
 		<diode
 			name="D1"
 			pcbY={2}
-			pcbX={3}
-			footprint="0402"
+			pcbX={2.5}
+			footprint="sod523"
+			manufacturerPartNumber="1N4148W-TP"
 			connections={{
 				pin1: "USB_C.DN2",
 				pin2: "USB_C.GND2",
@@ -30,7 +31,8 @@ export const UsbCSection = () => (
 			name="D2"
 			pcbX={-3}
 			pcbY={1}
-			footprint="0402"
+			footprint="sod523"
+			manufacturerPartNumber="1N4148W-TP"
 			connections={{
 				pin1: "USB_C.DP2",
 				pin2: "USB_C.GND2",

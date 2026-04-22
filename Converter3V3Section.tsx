@@ -74,6 +74,7 @@ export const Converter3V3Section = () => (
 			name="R20"
 			resistance="100k"
 			footprint="0402"
+			supplierPartNumbers={{ jlcpcb: ["C25741"] }}
 			pcbX={-6}
 			pcbY={4}
 			connections={{
@@ -85,6 +86,7 @@ export const Converter3V3Section = () => (
 			name="R22"
 			resistance="100k"
 			footprint="0402"
+			supplierPartNumbers={{ jlcpcb: ["C25741"] }}
 			pcbX={8}
 			pcbY={-4}
 			connections={{

@@ -185,6 +185,7 @@ export const StepperDriver = () => (
 			name="R8"
 			resistance="20k"
 			footprint="0402"
+			supplierPartNumbers={{ jlcpcb: ["C25765"] }}
 			pcbX={0}
 			pcbY={-12}
 			connections={{

@@ -41,6 +41,7 @@ export const UsbPdSection = () => (
 			name="R11"
 			resistance="20k"
 			footprint="0402"
+			supplierPartNumbers={{ jlcpcb: ["C25765"] }}
 			pcbX={9}
 			pcbY={6}
 			connections={{
@@ -52,6 +53,7 @@ export const UsbPdSection = () => (
 			name="R14"
 			resistance="2.7k"
 			footprint="0402"
+			supplierPartNumbers={{ jlcpcb: ["C2906905"] }}
 			pcbX={9}
 			pcbY={2}
 			connections={{
