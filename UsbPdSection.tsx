@@ -64,7 +64,7 @@ export const UsbPdSection = () => (
 			resistance="10k"
 			footprint="0402"
 			pcbX={-8}
-			pcbY={-11}
+			pcbY={-8}
 			connections={{
 				pin1: "net.VCC3",
 				pin2: "U3.PG",
@@ -75,7 +75,7 @@ export const UsbPdSection = () => (
 			resistance="1k"
 			footprint="0402"
 			pcbX={-5}
-			pcbY={-11}
+			pcbY={-8}
 			connections={{
 				pin1: "LED3.pin2",
 				pin2: "U3.PG",
@@ -86,7 +86,7 @@ export const UsbPdSection = () => (
 			resistance="1k"
 			footprint="0402"
 			pcbX={-10}
-			pcbY={-6}
+			pcbY={-2}
 			connections={{
 				pin1: "net.VBUS",
 				pin2: "net.VCC3",
@@ -119,7 +119,7 @@ export const UsbPdSection = () => (
 			color="green"
 			footprint="0603"
 			pcbX={-1}
-			pcbY={-11}
+			pcbY={-8}
 			connections={{
 				pin1: "net.VCC3",
 			}}

@@ -1,6 +1,7 @@
 import { S4B_PH_SM4_K_TB_LF__SN_ } from "./imports/S4B_PH_SM4_K_TB_LF__SN_";
 import { TMC2209_LA_T } from "./imports/TMC2209_LA_T";
-import { BLA10V100M6_3_6_63TP } from "./imports/BLA10V100M6_3_6_63TP";
+import { BLA10V100M6_3_6_63TP } from "./imports/BLA10V100M6_3_6_6_3TP";
+import { Potentiometer } from "imports/VGF39NCHXT_B203";
 
 export const StepperDriver = () => (
 	<group pcbX={-18} pcbY={8} schX={-18} schY={8}>
@@ -95,7 +96,7 @@ export const StepperDriver = () => (
 		<solderjumper
 			pinCount={3}
 			name="J1"
-			footprint="solderjumper3_bridged12"
+			footprint="solderjumper3"
 			connections={{
 				pin1: "net.VCC3",
 				pin2: "U1.MS1_AD0",
@@ -107,7 +108,7 @@ export const StepperDriver = () => (
 		<solderjumper
 			pinCount={3}
 			name="J2"
-			footprint="solderjumper3_bridged12"
+			footprint="solderjumper3"
 			pcbX={-14}
 			pcbY={13}
 			connections={{
@@ -119,7 +120,7 @@ export const StepperDriver = () => (
 		<solderjumper
 			pinCount={3}
 			name="J3"
-			footprint="solderjumper3_bridged12"
+			footprint="solderjumper3"
 			pcbX={-10}
 			pcbY={10}
 			connections={{
@@ -130,7 +131,7 @@ export const StepperDriver = () => (
 		/>
 		<S4B_PH_SM4_K_TB_LF__SN_
 			name="P1"
-			pcbX={-13}
+			pcbX={-12}
 			pcbY={-1}
 			pcbRotation={90}
 			schPinArrangement={{
@@ -162,8 +163,8 @@ export const StepperDriver = () => (
 			name="R6"
 			resistance="100mohm"
 			footprint="1206"
-			pcbX={7}
-			pcbY={-8}
+			pcbX={9}
+			pcbY={-14}
 			connections={{
 				pin1: "U1.BRA",
 				pin2: "net.GND",
@@ -173,8 +174,8 @@ export const StepperDriver = () => (
 			name="R7"
 			resistance="100k"
 			footprint="1206"
-			pcbX={7}
-			pcbY={-4}
+			pcbX={8}
+			pcbY={-8}
 			connections={{
 				pin1: "U1.BRB",
 				pin2: "net.GND",
@@ -192,13 +193,11 @@ export const StepperDriver = () => (
 			}}
 		/>
 
-		<potentiometer
+		<Potentiometer
 			symbolName="potentiometer3"
 			name="R10"
-			maxResistance="20k"
-			footprint="pinrow3"
-			pcbX={10}
-			pcbY={-14}
+			pcbX={0}
+			pcbY={-7}
 			pcbRotation={90}
 			connections={{
 				pin2: "U1.VREF",

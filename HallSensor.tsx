@@ -6,7 +6,7 @@ export const HallSensor = () => (
 		<AS5600_ASOT
 			name="U_HALL"
 			pcbX={0}
-			pcbY={4}
+			pcbY={14}
 			schWidth={2.4}
 			schPinArrangement={{
 				leftSide: {
