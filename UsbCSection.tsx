@@ -12,6 +12,8 @@ export const UsbCSection = () => (
 				pin2: "net.GND",
 				pin3: "net.GND",
 				pin4: "net.GND",
+				CC1: "net.CC1",
+				CC2: "net.CC2",
 				pin15: "net.VBUS",
 				pin16: "net.VBUS",
 			}}
